@@ -1,1 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Lakshmi ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500&display=swap');
 
+*{box-sizing:border-box}
+body{
+ margin:0;background:#160b10;color:#f8e9df;
+ font-family:'Poppins',sans-serif;text-align:center;
+}
+.hero{
+ min-height:100vh;display:flex;flex-direction:column;
+ justify-content:center;align-items:center;padding:30px;
+ background:radial-gradient(ellipse at center,#642b3c,#160b10 75%);
+}
+.small{color:#e7bd91;letter-spacing:4px;font-size:11px}
+h1{
+ font:500 clamp(48px,12vw,82px) 'Playfair Display',serif;
+ margin:20px 0;color:#f5d4ad;
+}
+.hero p{max-width:520px;line-height:1.9;color:#e8d2ca}
+button{
+ background:#d6aa79;color:#241018;border:0;
+ padding:13px 25px;border-radius:30px;
+ font:500 13px 'Poppins';cursor:pointer;margin:10px;
+}
+section{padding:75px 22px;max-width:850px;margin:auto}
+h2{font:500 36px 'Playfair Display',serif;color:#edc69f}
+.line{width:55px;height:1px;background:#d6aa79;margin:18px auto 35px}
+p{line-height:2;color:#dfc9c3}
+.card{
+ background:#29151e;border:1px solid #69404a;
+ padding:25px;border-radius:15px;margin:18px 0;text-align:left;
+}
+.date{color:#d6aa79;font-size:12px;letter-spacing:2px}
+.card h3{font:500 23px 'Playfair Display';color:#f3d5b6}
+.gallery{
+ display:grid;grid-template-columns:1fr 1fr;gap:12px;
+}
+.photo{
+ min-height:170px;border:1px dashed #a47768;
+ border-radius:12px;display:flex;align-items:center;
+ justify-content:center;color:#c9a69c;padding:15px;
+ background:linear-gradient(145deg,#432432,#25131c);
+ font-size:13px;
+}
+.letter{
+ background:#29151e;padding:28px;border-radius:15px;
+ border:1px solid #69404a;text-align:left;
+}
+footer{padding:45px 15px;color:#bd988e;font-size:12px}
+a{color:#e9bd91}
+@media(max-width:500px){
+ .gallery{grid-template-columns:1fr 1fr}
+ section{padding:55px 18px}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+ <div class="small">A LITTLE SOMETHING FOR YOU</div>
+ <h1>For Lakshmi</h1>
+ <p>Some people enter our lives unexpectedly and slowly become our favourite part of every day.</p>
+ <button onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+  Open your surprise ♡
+ </button>
+ <p style="color:#d6aa79">November 11 · Your special day</p>
+</div>
+
+<section id="story">
+ <div class="small">OUR LITTLE UNIVERSE</div>
+ <h2>How it all began</h2>
+ <div class="line"></div>
+
+ <div class="card">
+  <div class="date">22 MARCH 2024</div>
+  <h3>The beginning</h3>
+  <p>Who knew that meeting someone online would eventually become such a beautiful part of life?</p>
+ </div>
+
+ <div class="card">
+  <div class="date">24 MARCH 2024</div>
+  <h3>4 AM conversations</h3>
+  <p>Those conversations that made us forget about time. Somehow, even the simplest chats became special.</p>
+ </div>
+
+ <div class="card">
+  <div class="date">16 AUGUST 2024</div>
+  <h3>A little more than friendship</h3>
+  <p>The day we decided to give this little story a name. One of my favourite dates, always.</p>
+ </div>
+
+ <div class="card">
+  <div class="date">13–15 FEBRUARY</div>
+  <h3>Finally, together</h3>
+  <p>After all those conversations and all that distance, finally getting to meet you. A memory I'll always keep close.</p>
+ </div>
+
+ <div class="card">
+  <div class="date">19 AUGUST</div>
+  <h3>Another beautiful meeting</h3>
+  <p>Those few hours together felt so precious. The kind of day you wish you could pause for a little longer.</p>
+ </div>
+
+ <div class="card">
+  <div class="date">22 SEPTEMBER</div>
+  <h3>A day full of memories</h3>
+  <p>Nearly 25 hours together, food, the Gurdwara, Ganesh Puja, aarti, walks and rooftop conversations. So many little moments, all becoming one big memory.</p>
+ </div>
+</section>
+
+<section>
+ <div class="small">LITTLE PIECES OF US</div>
+ <h2>Our memories</h2>
+ <div class="line"></div>
+ <p>Every picture has a story. And these are some of my favourites.</p>
+ <div class="gallery">
+  <div class="photo">Our first photo ♡</div>
+  <div class="photo">A favourite memory ♡</div>
+  <div class="photo">My favourite person ♡</div>
+  <div class="photo">One more memory ♡</div>
+ </div>
+</section>
+
+<section>
+ <div class="small">SOME SONGS FOR YOU</div>
+ <h2>Press play ♡</h2>
+ <div class="line"></div>
+ <p>Two songs, a thousand memories.</p>
+ <div class="card">
+  <h3>Birthday song 🎂</h3>
+  <audio controls style="width:100%">
+   <source src="birthday-song.mp3" type="audio/mpeg">
+  </audio>
+ </div>
+ <div class="card">
+  <h3>Our song ❤️</h3>
+  <audio controls style="width:100%">
+   <source src="our-song.mp3" type="audio/mpeg">
+  </audio>
+ </div>
+ <p style="font-size:12px">We'll add our actual songs here later.</p>
+</section>
+
+<section>
+ <div class="small">A LETTER FOR YOU</div>
+ <h2>My love,</h2>
+ <div class="line"></div>
+ <div class="letter">
+  <p>Happy birthday, BB. ❤️</p>
+
+  <p>I honestly don't know where to begin, because there is so much I want to tell you. Sometimes I think about how randomly we met and how something that started with a simple conversation became such an important part of my life. If someone had told me back then that one day I'd be making a whole little birthday website for you, I probably wouldn't have believed them.</p>
+
+  <p>From our first conversations to those late nights when we kept talking until 4 AM, from 16 August to finally meeting you, every little chapter has its own place in my heart. I still think about our time together, our walks, our food, our random conversations and all those moments when we didn't really need anything special to have a good time.</p>
+
+  <p>I know distance isn't always easy. There are days when I wish we could just meet without planning everything in advance. But even with all the distance, you have become such a special part of my everyday life. I love sharing the smallest things with you, telling you random stories and finding reasons to annoy you. And yes, chaata pdega sometimes too. :')</p>
+
+  <p>On your birthday, I just want you to know that I appreciate you. I hope this new year brings you happiness, peace, confidence and everything you've been wishing for. I hope you get countless reasons to smile and feel proud of yourself.</p>
+
+  <p>Thank you for being a part of my story. I hope we get to make many more memories, visit more places, take more pictures and have many more conversations that accidentally last until morning.</p>
+
+  <p>Happy birthday once again, my love. Keep being you. You deserve so many beautiful things.</p>
+
+  <p style="color:#e7bd91">Always yours, with lots of love. ❤️</p>
+ </div>
+</section>
+
+<footer>
+ Made with love, just for you. ♡<br><br>
+ November 11 · Lakshmi's birthday
+</footer>
+
+</body>
+</html>
