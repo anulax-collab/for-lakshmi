@@ -3,70 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A Birthday Letter for My Love ❤️</title>
+<title>For My Love ❤️</title>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500&display=swap');
 
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
  margin:0;background:#160b10;color:#f8e9df;
- font-family:'Poppins',sans-serif;text-align:center;
+ font-family:Poppins,sans-serif;text-align:center;
 }
 .hero{
  min-height:100vh;display:flex;flex-direction:column;
- justify-content:center;align-items:center;padding:30px;
+ justify-content:center;align-items:center;padding:28px;
  background:radial-gradient(ellipse at center,#642b3c,#160b10 75%);
 }
 .small{color:#e7bd91;letter-spacing:4px;font-size:11px}
 h1{
  font:500 clamp(48px,12vw,82px) 'Playfair Display',serif;
- margin:20px 0;color:#f5d4ad;
+ margin:22px 0;color:#f5d4ad;
 }
-.hero p{max-width:520px;line-height:1.9;color:#e8d2ca}
-button{
- background:#d6aa79;color:#241018;border:0;
- padding:13px 25px;border-radius:30px;
- font:500 13px 'Poppins';cursor:pointer;margin:10px;
+h2{font:500 36px 'Playfair Display',serif;color:#edc69f}
+h3{font:500 23px 'Playfair Display',serif;color:#f3d5b6}
+p{line-height:2;color:#dfc9c3}
+.hero p{max-width:520px}
+button,.songlink{
+ display:inline-block;background:#d6aa79;color:#241018;
+ border:0;padding:13px 25px;border-radius:30px;
+ font:500 13px Poppins;text-decoration:none;cursor:pointer;
+ margin:10px;
 }
 section{padding:75px 22px;max-width:850px;margin:auto}
-h2{font:500 36px 'Playfair Display',serif;color:#edc69f}
 .line{width:55px;height:1px;background:#d6aa79;margin:18px auto 35px}
-p{line-height:2;color:#dfc9c3}
 .card{
  background:#29151e;border:1px solid #69404a;
  padding:25px;border-radius:15px;margin:18px 0;text-align:left;
 }
 .date{color:#d6aa79;font-size:12px;letter-spacing:2px}
-.card h3{font:500 23px 'Playfair Display';color:#f3d5b6}
-.gallery{
- display:grid;grid-template-columns:1fr 1fr;gap:12px;
-}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .photo{
- min-height:170px;border:1px dashed #a47768;
+ min-height:160px;border:1px dashed #a47768;
  border-radius:12px;display:flex;align-items:center;
  justify-content:center;color:#c9a69c;padding:15px;
  background:linear-gradient(145deg,#432432,#25131c);
  font-size:13px;
 }
+.song{ text-align:center }
+.song p{font-size:13px}
+iframe{
+ width:100%;height:220px;border:0;border-radius:12px;
+ margin-top:12px;
+}
 .letter{
  background:#29151e;padding:28px;border-radius:15px;
  border:1px solid #69404a;text-align:left;
 }
+.letter p{margin-bottom:22px}
 footer{padding:45px 15px;color:#bd988e;font-size:12px}
-a{color:#e9bd91}
 @media(max-width:500px){
- .gallery{grid-template-columns:1fr 1fr}
  section{padding:55px 18px}
+ iframe{height:200px}
 }
 </style>
 </head>
+
 <body>
 
 <div class="hero">
  <div class="small">A LITTLE SOMETHING FOR YOU</div>
- <h1>For Laxmi</h1>
+ <h1>For My Love</h1>
  <p>Some people enter our lives unexpectedly and slowly become our favourite part of every day.</p>
- <button onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+ <button onclick="document.getElementById('story').scrollIntoView()">
   Open your surprise ♡
  </button>
  <p style="color:#d6aa79">November 11 · Your special day</p>
@@ -118,7 +126,7 @@ a{color:#e9bd91}
  <div class="small">LITTLE PIECES OF US</div>
  <h2>Our memories</h2>
  <div class="line"></div>
- <p>Every picture has a story. And these are some of my favourites.</p>
+ <p>Every picture has a story. We'll fill these spaces with our favourite memories.</p>
  <div class="gallery">
   <div class="photo">Our first photo ♡</div>
   <div class="photo">A favourite memory ♡</div>
@@ -129,28 +137,37 @@ a{color:#e9bd91}
 
 <section>
  <div class="small">SOME SONGS FOR YOU</div>
- <h2>Press play ♡</h2>
+ <h2>Our little playlist</h2>
  <div class="line"></div>
  <p>Two songs, a thousand memories.</p>
- <div class="card">
-  <h3>Birthday song 🎂</h3>
-  <audio controls style="width:100%">
-   <source src="birthday-song.mp3" type="audio/mpeg">
-  </audio>
+
+ <div class="card song">
+  <h3>Happy Birthday 🎂</h3>
+  <p>Diljit Dosanjh</p>
+  <a class="songlink"
+  href="https://www.youtube.com/results?search_query=Diljit+Dosanjh+Happy+Birthday+Disco+Singh"
+  target="_blank" rel="noopener">
+  Play birthday song ♡
+  </a>
  </div>
- <div class="card">
-  <h3>Our song ❤️</h3>
-  <audio controls style="width:100%">
-   <source src="our-song.mp3" type="audio/mpeg">
-  </audio>
+
+ <div class="card song">
+  <h3>Samjho Na ❤️</h3>
+  <p>Aditya Rikhari · Original independent version</p>
+  <iframe
+  src="https://www.youtube-nocookie.com/embed/MhXCj8E9CZU"
+  title="Aditya Rikhari Samjho Na"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+  </iframe>
  </div>
- <p style="font-size:12px">We'll add our actual songs here later.</p>
 </section>
 
 <section>
- <div class="small">A LETTER FOR YOU</div>
- <h2>My love,</h2>
+ <div class="small">A LETTER FROM MY HEART</div>
+ <h2>My Love,</h2>
  <div class="line"></div>
+
  <div class="letter">
   <p>Happy birthday, BB. ❤️</p>
 
@@ -160,13 +177,13 @@ a{color:#e9bd91}
 
   <p>I know distance isn't always easy. There are days when I wish we could just meet without planning everything in advance. But even with all the distance, you have become such a special part of my everyday life. I love sharing the smallest things with you, telling you random stories and finding reasons to annoy you. And yes, chaata pdega sometimes too. :')</p>
 
-  <p>On your birthday, I just want you to know that I appreciate you. I hope this new year brings you happiness, peace, confidence and everything you've been wishing for. I hope you get countless reasons to smile and feel proud of yourself.</p>
+  <p>Jaanu, on your birthday, I just want you to know how much I appreciate you. I hope this new year brings you happiness, peace, confidence and everything you've been wishing for. I hope you get countless reasons to smile and feel proud of yourself.</p>
 
   <p>Thank you for being a part of my story. I hope we get to make many more memories, visit more places, take more pictures and have many more conversations that accidentally last until morning.</p>
 
   <p>Happy birthday once again, my love. Keep being you. You deserve so many beautiful things.</p>
 
-  <p style="color:#e7bd91">Always yours, with lots of love. ❤️</p>
+  <p style="color:#e7bd91">Lots of love, always. ❤️</p>
  </div>
 </section>
 
