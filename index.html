@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#160d12">
+  <title>For Lakshmi ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <nav class="topbar">
+    <a class="brand" href="#home">L <span>♡</span></a>
+    <button class="music-toggle" id="musicToggle" aria-label="Open music player">♫ <span>Our music</span></button>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <p class="eyebrow reveal">A LITTLE SOMETHING FOR YOU</p>
+      <h1 class="reveal">For my<br><em>Lakshmi.</em></h1>
+      <p class="hero-sub reveal">Some people become your favourite part of every story.</p>
+      <button class="primary-btn reveal" id="openStory">Open your gift <span>↗</span></button>
+      <div class="scroll-note">SCROLL A LITTLE <span>↓</span></div>
+    </section>
+
+    <section class="intro section-pad" id="story">
+      <p class="eyebrow">BEFORE YOU GO ON</p>
+      <h2 class="section-title">This little corner<br>is <em>all yours.</em></h2>
+      <p class="body-copy">I wanted to make you something that you could come back to whenever you wanted. A place for our pictures, our dates, our songs, and all the things I sometimes don't know how to say properly.</p>
+      <div class="signature">With love, always. <span>♡</span></div>
+    </section>
+
+    <section class="timeline-section section-pad">
+      <p class="eyebrow">A FEW DATES I KEEP CLOSE</p>
+      <h2 class="section-title">Our little <em>timeline.</em></h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="date">22 MARCH 2024</span>
+          <div><h3>Where it began</h3><p>A simple hello that became something I never expected.</p></div>
+        </article>
+        <article class="timeline-item">
+          <span class="date">24 MARCH 2024</span>
+          <div><h3>Past 4 in the morning</h3><p>One of those conversations that made it hard to say goodnight.</p></div>
+        </article>
+        <article class="timeline-item">
+          <span class="date">16 AUGUST 2024</span>
+          <div><h3>My favourite question</h3><p>The day I asked you to be mine.</p></div>
+        </article>
+        <article class="timeline-item">
+          <span class="date">13–15 FEBRUARY</span>
+          <div><h3>Finally, together</h3><p>Our first time meeting in person. A memory I still keep close.</p></div>
+        </article>
+        <article class="timeline-item">
+          <span class="date">19 AUGUST</span>
+          <div><h3>A few hours, a whole memory</h3><p>Just 3–4 hours together, and every bit of travelling felt worth it.</p></div>
+        </article>
+        <article class="timeline-item">
+          <span class="date">22 SEPTEMBER</span>
+          <div><h3>Almost 25 hours</h3><p>Food, the Gurdwara, Ganesh Puja, aarti, walks, and rooftop conversations. One of my favourite days with you.</p></div>
+        </article>
+      </div>
+      <p class="small-note">You can add the years to the dates where you want them.</p>
+    </section>
+
+    <section class="gallery-section section-pad">
+      <p class="eyebrow">LITTLE PIECES OF US</p>
+      <h2 class="section-title">Memories in <em>frames.</em></h2>
+      <p class="body-copy">The photos will go here. Replace the sample images with your own favourites.</p>
+      <div class="gallery">
+        <figure><img src="assets/photos/photo1.jpg" alt="A favourite memory" onerror="this.src='https://placehold.co/700x850/30202a/e9d8c8?text=Add+photo1.jpg'"><figcaption>one of my favourite memories</figcaption></figure>
+        <figure class="tilt"><img src="assets/photos/photo2.jpg" alt="Another favourite memory" onerror="this.src='https://placehold.co/700x850/30202a/e9d8c8?text=Add+photo2.jpg'"><figcaption>you, being you ♡</figcaption></figure>
+        <figure><img src="assets/photos/photo3.jpg" alt="A special memory" onerror="this.src='https://placehold.co/700x850/30202a/e9d8c8?text=Add+photo3.jpg'"><figcaption>one for the memory box</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="music-section section-pad">
+      <p class="eyebrow">PRESS PLAY WHENEVER YOU LIKE</p>
+      <h2 class="section-title">A soundtrack<br>for <em>our story.</em></h2>
+      <div class="player-card">
+        <div class="vinyl">♫</div>
+        <div class="track-info"><span class="date">NOW PLAYING</span><h3 id="trackTitle">Birthday song</h3><p id="trackSubtitle">A song picked for you</p></div>
+        <button class="play-btn" id="playBtn" aria-label="Play or pause">▶</button>
+        <audio id="audioPlayer" preload="none"></audio>
+      </div>
+      <div class="track-list">
+        <button class="track active" data-src="assets/music/birthday-song.mp3" data-title="Birthday song" data-subtitle="A song picked for you"><span>01</span> Birthday song <b>▶</b></button>
+        <button class="track" data-src="assets/music/our-song.mp3" data-title="Our song" data-subtitle="One that reminds me of us"><span>02</span> Our song <b>▶</b></button>
+      </div>
+      <p class="small-note">Music needs a tap to start on most phones. Add audio files you have permission to use.</p>
+    </section>
+
+    <section class="letter-section section-pad">
+      <p class="eyebrow">SOMETHING I WANT YOU TO READ</p>
+      <h2 class="section-title">A letter, just<br>for <em>you.</em></h2>
+      <button class="primary-btn" id="openLetter">Open your letter <span>♡</span></button>
+      <div class="letter" id="letter">
+        <p>Happy birthday, my love.</p>
+        <p>Today is about you — the person you are, the little things that make you you, and all the happiness I hope finds its way to you. I hope this new year of your life brings you reasons to smile, things to look forward to, and people who make you feel as loved as you deserve.</p>
+        <p>Thank you for being part of my life and for giving me so many memories that I get to call ours. I wish I could be there beside you today, but until then, I hope this little website makes you feel a little closer to me.</p>
+        <p class="letter-sign">Happy birthday, BB. ♡</p>
+        <p class="small-note">Replace this sample letter in index.html with your final birthday paragraph.</p>
+      </div>
+    </section>
+
+    <footer><span>MADE FOR LAKSHMI</span><p>In every version of my story, I'm glad I met you. ♡</p></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
